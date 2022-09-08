@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="713.0" styleClass="blueclor" stylesheets="@style2.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlinefood.Checkout">
+    <children>
+        <Label layoutX="200.0" layoutY="14.0" textFill="#cfc0c0">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="73.0" layoutY="597.0" text="Total" textFill="#fff4f4">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="141.0" layoutY="602.0" text="(incl. VAT)" textFill="WHITE">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
+        <Line endX="209.20001220703125" endY="11.79998779296875" layoutX="194.0" layoutY="597.0" startX="13.0" startY="11.79998779296875" stroke="WHITE" />
+        <Label layoutX="439.0" layoutY="589.0" text="Tk" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="finalPrice" layoutX="465.0" layoutY="589.0" text="00.0" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Button layoutX="206.0" layoutY="623.0" mnemonicParsing="false" onAction="#orderPlaceBtn" prefHeight="36.0" prefWidth="272.0" stylesheets="@style2.css" text="Place order" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+         <styleClass>
+            <String fx:value="fruit-item" />
+            <String fx:value="shadow" />
+            <String fx:value="blue" />
+         </styleClass>
+        </Button>
+        <Label fx:id="userName" layoutX="40.0" layoutY="140.0" />
+        <Label fx:id="fileName" layoutX="40.0" layoutY="192.0" />
+      <ImageView fitHeight="51.0" fitWidth="49.0" layoutX="24.0" layoutY="26.0" onDragDetected="#back" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/back.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="141.0" layoutY="18.0" text="Payment Method" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="bkashButton" layoutX="114.0" layoutY="91.0" mnemonicParsing="false" onAction="#bkash" prefHeight="66.0" prefWidth="230.0" stylesheets="@style2.css" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="fruit-item" />
+         </styleClass>
+      </Button>
+      <ImageView fitHeight="66.0" fitWidth="98.0" layoutX="178.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/bkssh.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="nagadButton" layoutX="112.0" layoutY="167.0" mnemonicParsing="false" onAction="#nagad" prefHeight="66.0" prefWidth="230.0" stylesheets="@style2.css" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="fruit-item" />
+         </styleClass>
+      </Button>
+      <ImageView fitHeight="66.0" fitWidth="98.0" layoutX="178.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Nagad.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="cashOndelivaryButton" layoutX="112.0" layoutY="245.0" mnemonicParsing="false" onAction="#cashOnDelivary" prefHeight="66.0" prefWidth="230.0" stylesheets="@style2.css" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="fruit-item" />
+         </styleClass>
+      </Button>
+      <ImageView fitHeight="66.0" fitWidth="98.0" layoutX="180.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/COD2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelText" layoutX="421.0" layoutY="153.0" prefHeight="28.0" prefWidth="219.0" textFill="#ff003d">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phone" alignment="CENTER" layoutX="411.0" layoutY="192.0" prefHeight="49.0" prefWidth="272.0" promptText="Enter here" styleClass="fruit-item" stylesheets="@style2.css">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Button layoutX="488.0" layoutY="268.0" mnemonicParsing="false" onAction="#proceed" prefHeight="37.0" prefWidth="112.0" stylesheets="@style2.css" text="Proceed" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="fruit-item" />
+            <String fx:value="shadow" />
+            <String fx:value="blue" />
+         </styleClass>
+      </Button>
+      <TextField fx:id="verifyotp" alignment="CENTER" layoutX="476.0" layoutY="349.0" prefHeight="41.0" prefWidth="206.0" styleClass="fruit-item" stylesheets="@style2.css">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Label fx:id="labelText1" layoutX="361.0" layoutY="356.0" prefHeight="28.0" prefWidth="98.0" text="Verify OTP" textFill="#e7e7e7">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="494.0" layoutY="424.0" mnemonicParsing="false" onAction="#verify" prefHeight="38.0" prefWidth="98.0" stylesheets="@style2.css" text="Verify" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="fruit-item" />
+            <String fx:value="shadow" />
+            <String fx:value="blue" />
+         </styleClass>
+      </Button>
+      <TextArea fx:id="delivaryaddress" layoutX="113.0" layoutY="384.0" prefHeight="200.0" prefWidth="200.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="117.0" layoutY="342.0" text="your address" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

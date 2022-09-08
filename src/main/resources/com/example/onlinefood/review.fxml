@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="blueclor" stylesheets="@style2.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.onlinefood.Review">
+    <children>
+        <ImageView fx:id="okSignImg" fitHeight="79.0" fitWidth="95.0" layoutX="256.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/check.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="142.0" layoutY="120.0" prefHeight="40.0" prefWidth="317.0" text="Thanks for your order. Your order has been placed." textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Nirmala UI" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="122.0" layoutY="152.0" prefHeight="40.0" prefWidth="357.0" text="Your food will be delivered in 30-40 mins. Enjoy the food!" textAlignment="CENTER" textFill="#bca9a9">
+            <font>
+                <Font name="Nirmala UI" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="getaddress" alignment="CENTER" disable="true" editable="false" layoutX="185.0" layoutY="284.0" prefHeight="79.0" prefWidth="285.0" stylesheets="@style2.css">
+         <styleClass>
+            <String fx:value="fruit-item" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label layoutX="142.0" layoutY="237.0" prefHeight="40.0" prefWidth="317.0" text="Your order will be sent to" textAlignment="CENTER" textFill="#a9a2a2">
+         <font>
+            <Font name="Nirmala UI" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
